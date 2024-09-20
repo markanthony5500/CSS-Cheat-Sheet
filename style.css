@@ -1,0 +1,319 @@
+/* Global Styles */
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS Variables for Reusability */
+:root {
+  --backgroundColor: #393939;
+  --secondaryColor: #e1e1e1;
+  --exampleColor: grey;
+}
+
+/* Body Styles */
+body {
+  margin: 0;
+}
+
+/* Paragraph Styles */
+p {
+  word-wrap: break-word;
+}
+
+/* Container Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 6fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Header Section */
+.header {
+  background-color: var(--secondaryColor);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h6 {
+  align-self: self-end;
+}
+
+/* Main Body Section */
+.body {
+  background-color: var(--backgroundColor);
+  display: grid;
+  padding-top: 15px;
+  grid-template-columns: 1fr 6fr;
+  overflow: hidden;
+}
+
+/* Sidebar Section */
+.sidebar {
+  background-color: var(--secondaryColor);
+  padding-top: 10px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.sidebar * {
+  margin: 10px;
+}
+
+.sidebar h1 {
+  font-size: 25px;
+}
+
+.sidebar p {
+  font-size: 15px;
+}
+
+/* Sidebar Hover Effect */
+.sidebar p:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Content Section */
+.content {
+  background-color: #424242;
+  display: grid;
+  gap: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  grid-template-columns: 3fr;
+  grid-template-rows: 1fr 10fr;
+  overflow: hidden;
+}
+
+/* Card 1 Styling */
+.card1 {
+  background-color: var(--secondaryColor);
+  grid-area: 1 / 1 / 2 / 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card 2 Styling */
+.card2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--secondaryColor);
+  grid-area: 2 / 1 / 2 / 1;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+/* Description Box */
+.description {
+  border: solid var(--backgroundColor) 3px;
+  margin: 5px;
+  border-radius: 6px;
+}
+
+.description * {
+  margin: 10px;
+}
+
+/* Example Box */
+.example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid var(--backgroundColor) 3px;
+  margin: 5px;
+  border-radius: 6px;
+}
+
+/* Box Model Example Section */
+.boxModelExample {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1fr;
+  height: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.boxMargin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+  background-color: var(--exampleColor);
+  border: solid black 3px;
+  margin: 20px;
+}
+
+.boxBorder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 230px;
+  background-color: var(--secondaryColor);
+  border: solid black 3px;
+}
+
+.boxPadding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  background-color: var(--exampleColor);
+  border: solid black 3px;
+}
+
+.boxContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  background-color: var(--secondaryColor);
+  border: solid black 3px;
+}
+
+/* Position Labels Inside Box Model */
+.boxModelExample p {
+  position: absolute;
+  margin: 0;
+}
+
+.labelMargin {
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.labelBorder {
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.labelPadding {
+  top: 61px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.labelContent {
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Example Container */
+.exampleContainer {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border: solid black 3px;
+  margin: 20px;
+}
+
+/* Margin Content Box */
+.marginContent {
+  width: 200px;
+  height: 200px;
+  margin: 40px;
+  border: solid black 3px;
+  background-color: var(--exampleColor);
+}
+
+/* Border Examples */
+.dottedBorder {
+  border: dotted black 5px;
+  margin: 10px;
+  padding: 3px;
+}
+
+.dashedBorder {
+  border: dashed black 5px;
+  margin: 10px;
+  padding: 3px;
+}
+
+.solidBorder {
+  border: solid black 5px;
+  margin: 10px;
+  padding: 3px;
+}
+
+.doubleBorder {
+  border: double black 5px;
+  margin: 10px;
+  padding: 3px;
+}
+
+.wideBorder {
+  border: solid black 8px;
+  margin: 10px;
+  padding: 3px;
+}
+
+.greenBorder {
+  border: solid green 5px;
+  margin: 10px;
+  padding: 3px;
+}
+
+.radiusBorder {
+  border: solid black 5px;
+  margin: 10px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+/* Padding Examples */
+.paddingExample1 {
+  border: solid black 3px;
+  padding: 20px;
+  margin: 5px;
+}
+
+.paddingExample2 {
+  border: solid black 3px;
+  padding: 40px;
+  margin: 5px;
+}
+
+/* Flex-box Elements */
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+
+/* Flexbox Container */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Grid Container */
+.grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  gap: 10px;
+}

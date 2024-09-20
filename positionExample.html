@@ -1,0 +1,56 @@
+<!--Shows the effect of position on an entire document-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+</head>
+<body>
+<style>
+  .sticky { 
+  position: sticky;
+  top: 10px;
+  padding: 3px;
+}
+
+.fixed { 
+  position: fixed;
+  top: 40px;
+  padding: 3px;
+}
+
+.absolute { 
+  position: absolute;
+  top: 20px;
+  padding: 3px;
+}
+
+.relative { 
+  position: relative;
+  top: 80px;
+  padding: 3px;
+}
+
+body {
+  margin: 0;
+  height: 1000px;
+}
+
+
+</style>
+
+<div class="fixed">
+  <p>Fixed</p>
+</div>
+<div class="absolute">
+  <p>Absolute</p>
+</div>
+<div class="relative">
+  <p>Relative</p>
+</div>
+<div class="sticky">
+  <p>Sticky</p>
+</div>
+</body>
+</html>

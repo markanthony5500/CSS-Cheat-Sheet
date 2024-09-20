@@ -1,0 +1,609 @@
+<!--Mark Collins-->
+<!--03/07/24-->
+<!--CSS Cheat Sheet-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Cheat Sheet</title>
+  </head>
+  <body>
+    <!--Header Section-->
+    <div class="container">
+      <div class="header">
+        <h1>CSS Cheat Sheet</h1>
+        <h6>By: Mark Collins</h6>
+      </div>
+
+      <!--Main Body Section-->
+      <div class="body">
+        <!--Side Bar-->
+        <div class="sidebar">
+          <!--Box Model Section-->
+          <h1 class="sidebarItem">The Box Model</h1>
+          <p class="sidebarItem" data-navPosition="">Margin</p>
+          <p class="sidebarItem">Border</p>
+          <p class="sidebarItem">Padding</p>
+          <!--Position Section-->
+          <h1 class="sidebarItem">Position</h1>
+          <p class="sidebarItem">Fixed</p>
+          <p class="sidebarItem">Relative</p>
+          <p class="sidebarItem">Absolute</p>
+          <p class="sidebarItem">Sticky</p>
+          <p class="sidebarItem">Static</p>
+          <!--FlexBox Section-->
+          <h1 class="sidebarItem">Flex</h1>
+          <p class="sidebarItem">Flex-Direction</p>
+          <p class="sidebarItem">Flex-Wrap</p>
+          <p class="sidebarItem">Justify-Content</p>
+          <p class="sidebarItem">Align-Items</p>
+          <p class="sidebarItem">Order</p>
+          <p class="sidebarItem">Flex-Grow</p>
+          <p class="sidebarItem">Flex-Basis</p>
+          <!--Grid Section-->
+          <h1 class="sidebarItem">Grid</h1>
+          <p class="sidebarItem">Grid-Template</p>
+          <p class="sidebarItem">Grid-Gap</p>
+          <p class="sidebarItem">Grid-Row / Grid-Column</p>
+        </div>
+        <!--Main Content-->
+        <div class="content">
+          <!--Cards-->
+          <div class="card1">
+            <h1>Example</h1> 
+          </div>
+          <!--Example and Explanation Card-->
+          <div id="card2" class="card2">
+            <!--Description-->
+            <div class="description">
+              <!--Box Model-->
+              <div class="boxModel">
+                <h1 class="navElement">The Box Model</h1>
+                <p>The box model represents a box that wraps around HTML elements consisting of margin, border, padding, and content.</p>
+              </div>
+            </div>
+            <!--Example-->
+            <div class="example">
+              <!--Box Model Example-->
+              <div class="boxModelExample">
+                <!--Box Model Sections-->
+                <div class="boxMargin">
+                  <div class="boxBorder">
+                    <div class="boxPadding">
+                      <div class="boxContent">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Box Model Labels-->
+                <p class="labelMargin">Margin</p>
+                <p class="labelBorder">Border</p>
+                <p class="labelPadding">Padding</p>
+                <p class="labelContent">Content</p>
+              </div>
+            </div>
+            <!--Description-->
+            <div class="description">
+              <!--Margin Description-->
+              <div class="marginDescription">
+                <h1 class="navElement">Margin</h1>
+                <p>Used to make space around elements outside of defined borders</p>
+                <h3>Properties</h3>
+                <p>margin</p>
+                <p>margin-top</p>
+                <p>margin-left</p>
+                <p>margin-right</p>
+                <p>margin-bottom</p>
+              </div>
+            </div>
+            <div class="example">
+              <div class="exampleContainer">
+                <div class="marginContent">
+                </div>
+              </div>
+            </div>
+            <!--Description-->
+            <div class="description">
+              <!--Border Description-->
+              <div class="marginDescription">
+                <h1 class="navElement">Border</h1>
+                <p>Used to create and then specify the style, width, and color of a border around an element</p>
+                <p>Must specify style, color, and width of border</p>
+                <h3>Properties</h3>
+                <!--Border style property-->
+                <p>border-style</p>
+                <!--List of border-style values-->
+                <h4>Values</h4>
+                <h5>dotted</h5>
+                <p>Defines a dotted border</p>
+                <h5>dashed</h5>
+                <p>Defines a dashed border</p>
+                <h5>solid</h5>
+                <p>Defines a solid border</p>
+                <h5>double</h5>
+                <p>Defines a double border</p>
+                <h5>None</h5>
+                <p>Defines no border</p>
+                <h5>Hidden</h5>
+                <p>Defines a hidden border</p>
+                <!--Border color value-->
+                <p>border-color</p>
+                <p>changes the color of a border</p>
+                <!--Border width value -->
+                <p>border-width</p>
+                <p>Changes the size of a border</p>
+                <p>border-radius</p>
+                <p>Adds rounded borders</p>
+              </div>
+            </div>
+            <!--Border Example-->
+            <div style="display: block;" class="example" >
+              <p class="dottedBorder">This paragraph has a dotted border</p>
+              <p class="dashedBorder">This paragraph has a dashed border</p>
+              <p class="solidBorder">This paragraph has a solid border</p>
+              <p class="doubleBorder">This paragraph has a double border</p>
+              <p class="wideBorder">This paragraph has a solid border 8px wide</p>
+              <p class="greenBorder">This paragraph has a green border</p>
+              <p class="radiusBorder">This paragraph has a border radius of 10px</p>
+            </div>
+            <!--Description-->
+            <div class="description">
+              <!--Padding Description-->
+              <div class="marginDescription">
+                <h1 class="navElement">Padding</h1>
+                <p>Used to make space around elements inside of defined borders</p>
+                <h3>Properties</h3>
+                <p>padding</p>
+                <p>padding-top</p>
+                <p>padding-left</p>
+                <p>padding-right</p>
+                <p>padding-bottom</p>
+              </div>
+            </div>
+            <div class="example">
+              <div class="exampleContainer">
+                <p class="paddingExample1">This element has padding of 20px</p>
+                <p class="paddingExample2">This element has padding of 40px</p>
+              </div>
+            </div>
+
+            <!--Description-->
+            <div class="description">
+              <!--Position Desciption-->
+              <h1 class="navElement">Position</h1>
+              <p>Property used to specify the type of positioning(fixed, relative, absolute, sticky, static) method used on an element.</p>
+              <p>Position is set to static by default</p>
+              <h3>Positioning Properties</h3>
+              <p>top, bottom, left, and right are used to position elements</p>
+              <!--Fixed Description-->
+              <h1 class="navElement">Fixed</h1>
+              <p>Removes element from document flow and positions it relative to the viewport keeping it fixed onto the screen even while the page is being scrolled </p>
+              <!--Relative Description-->
+              <h1 class="navElement">Relative</h1>
+              <p>Positions an element relative to its normal position</p>
+              <!--Absolute Description-->
+              <h1 class="navElement">Absolute</h1>
+              <p>Positions an element relative to the nearest positioned ancestor.</p>
+              <p>If there is no positioned ancestor, then the element will position relative to the document body</p>
+              <!--Sticky Description-->
+              <h1 class="navElement">Sticky</h1>
+              <p>Positioned based of the scroll position</p>
+              <p>Element is positioned relative until  it is pushed off of the viewport then it is positioned fixed making it "stick" to the screen</p>
+              <h1 class="navElement">Static</h1>
+              <p>Default positioning of all elements. Element is positioned according to the normal flow of the page</p>
+              <p>Not effected by top, bottom, left, right</p>
+
+            </div>
+            <!--Position Example-->
+            <div class="example">
+              <!--Using positionExample.html to show effects of position of entire html document-->
+              <iframe class="exampleContainer" src="positionExample.html">
+                <p class="absoluteElement">This element is absolute</p>
+                <p class="stickyElement">This element is sticky</p>
+                <p class="relativeElement">This element is relative</p>
+              </iframe>
+            </div>
+            
+            <!--Description-->
+          <div class="description">
+            <!--Flex Description-->
+            <h1 class="navElement">Flex</h1>
+            <p>Enables flex for all child elements </p>
+            <h3>Parent Properties</h3>
+            <p>flex-direction</p>
+            <p>flex-wrap</p>
+            <p>justify-content</p>
+            <p>align-items</p>
+            <p>align-content</p>
+            <h3>Child Properties</h3>
+            <p>order</p>
+            <p>flex-grow</p>
+            <p>flex-basis</p>
+            <p>flex-shrink</p>
+            <p>align-self</p>
+          </div>
+          <!--Flex Example-->
+          <div class="example">
+            <div class="exampleContainer flex">
+              <div class="box">
+                <p>1</p>
+              </div>
+              <div class="box">
+                <p>2</p>
+              </div>
+              <div class="box">
+                <p>3</p>
+              </div>
+              <div class="box">
+                <p>4</p>
+              </div>
+              <div class="box">
+                <p>5</p>
+              </div>
+              <div class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Description-->
+          <div class="description">
+            <!--flex-direction Description-->
+            <h1 class="navElement">Flex-Direction</h1>
+            <p>Defines which direction the container stacks the items</p>
+            <h3>Properties</h3>
+            <p>row</p>
+            <p>row-reverse</p>
+            <p>column</p>
+            <p>column-reverse</p>
+          </div>
+          <!--Flex-Direction Example-->
+          <div class="example">
+            <div style="flex-direction: column;" class="exampleContainer flex">
+              <div class="box">
+                <p>1</p>
+              </div>
+              <div class="box">
+                <p>2</p>
+              </div>
+              <div class="box">
+                <p>3</p>
+              </div>
+              <div class="box">
+                <p>4</p>
+              </div>
+              <div class="box">
+                <p>5</p>
+              </div>
+              <div class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+          
+
+          <!--Description-->
+          <div class="description">
+            <!--flex-wrap Description-->
+            <h1 class="navElement">Flex-Wrap</h1>
+            <p>Will wrap items if they can't fit on one line</p>
+            <h3>Properties</h3>
+            <p>nowrap</p>
+            <p>wrap</p>
+            <p>wrap-reverse</p>
+          </div>
+          <!--flex-wrap Example-->
+          <div class="example">
+            <div style="flex-wrap: nowrap;" class="exampleContainer flex">
+              <div class="box">
+                <p>1</p>
+              </div>
+              <div class="box">
+                <p>2</p>
+              </div>
+              <div class="box">
+                <p>3</p>
+              </div>
+              <div class="box">
+                <p>4</p>
+              </div>
+              <div class="box">
+                <p>5</p>
+              </div>
+              <div class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Description-->
+          <div class="description">
+            <!--Justify-Content Description-->
+            <h1 class="navElement">Justify-Content</h1>
+            <p>Aligns flex container items when the items do not use all available space on the main axis </p>
+            <h3>Properties</h3>
+            <p>flex-start</p>
+            <p>flex-end</p>
+            <p>center</p>
+            <p>space-between</p>
+            <p>space-around</p>
+            <p>space-evenly</p>
+          </div>
+          <!--Justify Content Example-->
+          <div class="example">
+            <div style="justify-content: flex-start;" class="exampleContainer flex">
+              <div class="box">
+                <p>1</p>
+              </div>
+              <div class="box">
+                <p>2</p>
+              </div>
+              <div class="box">
+                <p>3</p>
+              </div>
+              <div class="box">
+                <p>4</p>
+              </div>
+              <div class="box">
+                <p>5</p>
+              </div>
+              <div class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Description-->
+          <div class="description">
+            <!--align-items Description-->
+            <h1 class="navElement">Align-Items</h1>
+            <p>Specifies the default alignment for items inside a flexbox container</p>
+            <h3>Properties</h3>
+            <p>flex-start</p>
+            <p>flex-end</p>
+            <p>center</p>
+            <p>baseline</p>
+            <p>stretch</p>
+          </div>
+          <!--Align Items Example-->
+          <div class="example">
+            <div style="align-items: flex-start;" class="exampleContainer flex">
+              <div class="box">
+                <p>1</p>
+              </div>
+              <div class="box">
+                <p>2</p>
+              </div>
+              <div class="box">
+                <p>3</p>
+              </div>
+              <div class="box">
+                <p>4</p>
+              </div>
+              <div class="box">
+                <p>5</p>
+              </div>
+              <div class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Description-->
+          <div class="description">
+            <!--order Description-->
+            <h1 class="navElement">Order</h1>
+            <p>Allows you to explicitly set the order you want each child to appear in</p>
+            <p>Used on child in flexbox container</p>
+          </div>
+          <!--Order Example-->
+          <div class="example">
+            <div class="exampleContainer flex">
+              <div style="order:6;" class="box ">
+                <p>1</p>
+              </div>
+              <div style="order:5;" class="box">
+                <p>2</p>
+              </div>
+              <div style="order:4;" class="box">
+                <p>3</p>
+              </div>
+              <div style="order:3;" class="box">
+                <p>4</p>
+              </div>
+              <div style="order:2;" class="box">
+                <p>5</p>
+              </div>
+              <div style="order:1;" style="order: 2;" class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+          
+          <!--Description-->
+          <div class="description">
+            <!--Flex-Grow Description-->
+            <h1 class="navElement">Flex-Grow</h1>
+            <p>Allows you to specify how much a child element will grow relative to the rest of the flex items inside a container</p>
+            <p>Used on child in flexbox container</p>
+            
+          </div>
+          <!--Flex Grow Example-->
+          <div class="example">
+            <div class="exampleContainer flex">
+              <div class="box">
+                <p>1</p>
+              </div>
+              <div style="flex-grow: 1;" class="box">
+                <p>2</p>
+              </div>
+              <div class="box">
+                <p>3</p>
+              </div>
+              <div class="box">
+                <p>4</p>
+              </div>
+              <div class="box">
+                <p>5</p>
+              </div>
+              <div style="flex-grow: 1;" class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Description-->
+          <div class="description">
+            <!--flex-basis Description-->
+            <h1 class="navElement">Flex-Basis</h1>
+            <p>Specifies the initial length of a flexible item</p>
+          </div>
+          <!--Flex Basis Example-->
+          <div class="example">
+            <div style="gap: 0;" class="exampleContainer flex">
+              <div style="flex-basis: 50px;" class="box">
+                <p>1</p>
+              </div>
+              <div style="flex-basis: 70px; background-color:blue;" class="box">
+                <p>2</p>
+              </div>
+              <div style="flex-basis: 90px; background-color: green;" class="box">
+                <p>3</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Description-->
+          <div class="description">
+            <!--Grid Description-->
+            <h1 class="navElement">Grid</h1>
+            <p>Displays child elements in a grid</p>
+            <p>Use display: grid;</p>
+          </div>
+          <!--Grid Example-->
+          <div class="example">
+            <div class="exampleContainer grid">
+              <div class="box">
+                <p>1</p>
+              </div>
+              <div class="box">
+                <p>2</p>
+              </div>
+              <div class="box">
+                <p>3</p>
+              </div>
+              <div class="box">
+                <p>4</p>
+              </div>
+              <div class="box">
+                <p>5</p>
+              </div>
+              <div class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Description-->
+          <div class="description">
+            <!--Grid-Template Description-->
+            <h1 class="navElement">Grid-Template</h1>
+            <p>Defines the grids rows and columns</p>
+            <h3>Properties</h3>
+            <p>Grid-Template-Row</p>
+            <p>Grid-Template-Column</p>
+            
+          </div>
+          <!--Grid Template Example-->
+          <div class="example">
+            <div style=" grid-template-columns: 80px 80px; grid-template-rows: 80px 80px 80px;" class="exampleContainer grid">
+              <div class="box">
+                <p>1</p>
+              </div>
+              <div class="box">
+                <p>2</p>
+              </div>
+              <div class="box">
+                <p>3</p>
+              </div>
+              <div class="box">
+                <p>4</p>
+              </div>
+              <div class="box">
+                <p>5</p>
+              </div>
+              <div class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Description-->
+          <div class="description">
+            <!--Grid-Gap Description-->
+            <h1 class="navElement">Grid-Gap</h1>
+            <p>Specifies the gap size between grid columns and rows</p>
+            <h3>Properties</h3>
+            <p>Grid-Row-Gap</p>
+            <p>Grid-Column-Gap</p>
+            <p>Grid-Gap</p>
+          </div>
+          <div class="example">
+            <div style="grid-gap: 20px;" class="exampleContainer grid">
+              <div class="box">
+                <p>1</p>
+              </div>
+              <div class="box">
+                <p>2</p>
+              </div>
+              <div class="box">
+                <p>3</p>
+              </div>
+              <div class="box">
+                <p>4</p>
+              </div>
+              <div class="box">
+                <p>5</p>
+              </div>
+              <div class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Description-->
+          <div class="description">
+            <!--Grid-Row Grid-Column Description-->
+            <h1 class="navElement">Grid-Row Grid-Column</h1>
+            <p>Determines a child elements column or row position inside of a grid</p>
+          </div>
+          <div class="example">
+            <div class="exampleContainer grid">
+              <div style="grid-row: 2;" class="box">
+                <p>1</p>
+              </div>
+              <div class="box">
+                <p>2</p>
+              </div>
+              <div class="box">
+                <p>3</p>
+              </div>
+              <div class="box">
+                <p>4</p>
+              </div>
+              <div class="box">
+                <p>5</p>
+              </div>
+              <div class="box">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+  </html>
